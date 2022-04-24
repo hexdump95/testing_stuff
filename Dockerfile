@@ -10,7 +10,7 @@ ENV APP_ENV=prod
 ENV APP_DEBUG=0
 
 RUN \
-    apk add libpq-dev php8-pdo_pgsql && \
+    apk add libpq-dev && \
     docker-php-ext-install pdo_pgsql && \
     composer install --no-dev --optimize-autoloader && \
     php bin/console cache:clear

@@ -11,7 +11,10 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/comment')]
+/**
+ * @author Sergio Villanueva <sergiovillanueva@protonmail.com>
+ */
+#[Route('/comments')]
 class CommentController extends AbstractController
 {
     private LoggerInterface $log;

@@ -5,6 +5,9 @@ namespace App\Entity;
 use App\Repository\CommentRepository;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * @author Sergio Villanueva <sergiovillanueva@protonmail.com>
+ */
 #[ORM\Entity(repositoryClass: CommentRepository::class)]
 class Comment
 {
